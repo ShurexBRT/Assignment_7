@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Assignemt_7</title>
+
+    <style>
+      body {
+        height: 100%;
+        font-family: sans-serif;
+      }
+
+      #grid {
+        display: grid;
+        width: 90vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 2em;
+        gap: 4em;
+      }
+
+      .box {
+        width: 13em;
+        height: 10em;
+        border-radius: 10px;
+        display: flex;
+      }
+
+      .box {
+        background-image: url(slika.png);
+        background-size: contain;
+        background-color: rgb(67, 136, 201);
+      }
+
+      span {
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        display: inline-block;
+        width: 10em;
+        height: 5em;
+        margin: 115px 0px 0 0;
+        padding: 10px 64px;
+      }
+
+      p {
+        text-align: center;
+        margin: 2em;
+        padding: 10px;
+      }
+      h1 {
+        font-weight: lighter;
+        margin: 1em;
+      }
+
+      @media screen and (max-width: 768px) {
+        #grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+          margin: 2em;
+          gap: 2em;
+        }
+      }
+      @media screen and (max-width: 414px) {
+        #grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(10, 1fr);
+          margin: 2em;
+          gap: 2em;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Gallery heading</h1>
+    <div id="grid">
+      <div id="box1" class="box">
+        <span>Image Title</span>
+      </div>
+      <div id="box2" class="box">
+        <span>Image Title</span>
+      </div>
+      <div id="box3" class="box">
+        <span>Image Title</span>
+      </div>
+      <div id="box4" class="box">
+        <span>Image Title</span>
+      </div>
+      <div id="box5" class="box">
+        <span>Image Title</span>
+      </div>
+      <div id="box6" class="box">
+        <span>Image Title</span>
+      </div>
+      <div id="box7" class="box">
+        <span>Image Title</span>
+      </div>
+      <div id="box8" class="box">
+        <span>Image Title</span>
+      </div>
+      <div id="box9" class="box">
+        <span>Image Title</span>
+      </div>
+      <div id="box0" class="box">
+        <span>Image Title</span>
+      </div>
+    </div>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda dicta
+      voluptates possimus aut fugit eius in ea corrupti blanditiis minima
+      deserunt repellat dolorem exercitationem quaerat cupiditate, dolore illum
+      odio eveniet. Temporibus veritatis sed totam ipsa minima enim tenetur
+      magni qui, eius deserunt voluptatibus saepe esse sint itaque corporis
+      nostrum natus fugiat architecto debitis ratione necessitatibus? Modi
+      facilis nesciunt in vero! Quod eum voluptas, excepturi impedit voluptatum
+      voluptate in maxime, dolorem nemo quos suscipit repellendus qui id
+      incidunt pariatur alias perspiciatis itaque saepe quibusdam. Consequuntur
+      magni impedit dolore? Officia, accusantium laboriosam.
+    </p>
+  </body>
+</html>
